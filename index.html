@@ -5,29 +5,38 @@
 
 <body>
 <header>
+
     <div class="section">
         <img class="minilogo" src="./minilogo.png" alt="minilogo" />
     </div>
+    
     <div class="section">
+
         <form class="section" action="something.php" method="POST">
             <!-- note that section is applied again (x2 application) -->
             <input class="section searchbar" type="text">
         </form>
-    </div>
-    <nav id="navbar"> 
-        <ul>  <!-- notice that we used ID -->
-            <li></li>       
-            <a href="a"><img class="img-navbar" src="https://edition18.github.io/googleapps.png"></a>
-            <li></li>
-            <a href="a"><img class="img-navbar" src="https://edition18.github.io/google-bell.png"></a>
-            <li></li>
-            <a href="a"><img class="img-navbar" src="https://edition18.github.io/googleprofilepic.jpg"></a>
-        </ul>
-    </nav>
-    <div class="tool-bar">
-        dsafdfdd
     
-    
+        <nav id="navbar"> 
+            <ul>  <!-- notice that we used ID -->
+                <li></li>       
+                <a href="a"><img class="img-navbar" src="https://edition18.github.io/googleapps.png"></a>
+                <li></li>
+                <a href="a"><img class="img-navbar" src="https://edition18.github.io/google-bell.png"></a>
+                <li></li>
+                <a href="a"><img class="img-navbar" src="https://edition18.github.io/googleprofilepic.jpg"></a>
+            </ul>
+        </nav>
+
+        <div class="tool-bar">
+            <nav>
+                <li class="current">
+                    <a href="na">All</a>
+                </li>
+            </nav>
+        
+        </div>
+
     </div>
 </header>
 
@@ -85,13 +94,7 @@ input.searchbar {
     float: left;
 }
 
-* {
-     /* this is a wildcard class ; in this case ALL elements affected */
-     /* https://www.w3schools.com/cssref/sel_all.asp */
-    padding: 0;
-    margin: 0;
-    border: 1px dotted black; /* border for debugging */
-}
+
 
 #navbar { 
     float: right;
@@ -100,7 +103,6 @@ input.searchbar {
 
 ul li {
     padding: 5px;
-    
     font-size: 13px;
 }
 
@@ -117,8 +119,31 @@ li {
 
 div.tool-bar {
     position: relative;
-    padding: 35px;
-    top: 25px;
+    padding: 0px;
+    top: 0px;
+    font-size: 15px;
+}
+
+li {
+    color: rgb(25, 25, 216);
+    font-weight: bold;
+
+}
+
+* {
+     /* this is a wildcard class ; in this case ALL elements affected */
+     /* https://www.w3schools.com/cssref/sel_all.asp */
+    padding: 0;
+    margin: 0;
+    border: 1px dotted black; /* border for debugging */
+}
+
+.current a {
+    /* NOTE: any a within a current class */
+    border-bottom-style: solid;
+    border-bottom: 3px;
+    border-bottom-color:  rgb(25, 25, 216);
+    border-bottom-style: solid;
 }
 
 </style>
