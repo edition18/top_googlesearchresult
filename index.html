@@ -1,0 +1,79 @@
+<head>
+    <title>Emulate search of China</title>
+</head>
+
+<body>
+<header>
+    <div class="section">
+        <img class="minilogo" src="./minilogo.png" alt="minilogo" />
+    </div>
+    <div class="section">
+        <form class="section" action="something.php" method="POST">
+            <!-- note that section is applied again (x2 application) -->
+            <input class="section searchbar" type="text">
+        </form>
+    </div>
+
+</header>
+
+
+
+</body>
+
+
+<style>
+
+
+
+img.minilogo {
+    width: 100px;
+    height: 30px;
+    padding: 15px;
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    display: inline;
+    margin-right: 20px;
+}
+
+header {
+    /* this would override any individual formatting of the internal elements */
+    /*  unless ID classes */
+}   
+
+body {
+    font-family: Arial, Helvetica, sans-serif; /* the font-family iterate this list until one is available */
+}
+
+input.searchbar {
+    block-size: 30px;
+    border-radius: 25px;
+    width: 625px;
+    /* resize and curve edges*/
+    font-size: 20px;
+    /* change font size of the text */
+    border: 1px solid #dfe1e5;
+    /* change border of search */
+    background-image: url("./mic.png"), url("./search.png");
+    background-repeat: no-repeat;
+    background-position: 90% 12px, 98% 12px;
+    background-position-x: 90%, 98%;
+    background-position-y: 12px, 12px;
+}
+
+.section {
+    /* this is a common format for all sections */
+    display: inline;
+    margin-top: 5px; /* shifts down abit*/
+    float: left;
+}
+
+* {
+     /* this is a wildcard class ; in this case ALL elements affected */
+     /* https://www.w3schools.com/cssref/sel_all.asp */
+    padding: 0;
+    margin: 0;
+}
+
+</style>
