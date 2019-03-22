@@ -1,5 +1,5 @@
 <head>
-    <title>Emulate search of China</title>
+    <title>Singapore</title>
     <!-- SAMPLE https://victor-lf.github.io/google-search-results/ -->
     <!-- https://edition18.github.io/googleapps.png -->
 </head>
@@ -8,9 +8,20 @@
 
 <header>
 <!-- searchbar & top menu -->
-<a>
-    <img src="./googlelogo.png" alt="logo" width="120" height="44" />
-</a>
+<div>
+    <form action="#" method="GET" class="searchbar">
+        <a href="">
+            <img src="./googlelogo.png" alt="logo" width="120" height="44" />
+        </a>
+        
+        <input type="search" name="query" title="Search" value="Singapore" autocomplete="off">
+        
+        <button class="search">
+            <img src="https://edition18.github.io/search.png" width="30px">      
+        </button>
+        
+    </form>
+</div>
 </header>
 
 <main>
@@ -32,18 +43,14 @@
     border: 1px dotted black; /* border for debugging */
 }
 
-.current a {
-
-}
-
 header {
     background: #fafafa;
     border-bottom: 1px solid #e4e4e4;
 }
 
-.header div { 
+header div { 
     /* any div in header*/
-    /* not SAME as div.header! (this affects all div with header class  */
+    /* not SAME as div.header! (this affects all div with header class)  */
     padding: 20px 12px 15px;
     white-space: nowrap; /* prevents wrapping */ 
     display: flex; /* allows the content to flex around its container */ 
@@ -51,6 +58,69 @@ header {
 }
 
 
+.searchbarshade {
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.16),0 0 0 1px rgba(0, 0, 0, 0.08);
+}
+
+form {
+    background-color: #fff;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+    margin: 0 17px;
+    outline: none;
+    padding: 0 15px;
+    transition: box-shadow 200ms cubic-bezier(0.4, 0.0, 0.2, 1);
+    width: 632px;
+    display: block;
+    margin-top: 0em;
+}
+
+input[type='search'] {
+    border: none;
+    display: inline-block;
+    font: 16px Arial, sans-serif;
+    height: 44px;
+    outline: none;
+    width: 580px;
+}
+
+html, body {
+    background: #fff;
+    color: #222;
+    font: 13px Arial, sans-serif;
+    margin: 0;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    vertical-align: middle;
+}
+
 
 
 </style>
+
+
+<!-- 
+    <header>
+      
+        <div>
+            <a href="">
+                <img src="./googlelogo.png" alt="logo" width="120" height="44" />
+            </a>
+            <form action="#" method="GET" class="searchbar">
+                <input type="search" name="query" title="Search" value="Singapore" autocomplete="off">
+                <button class="search">
+                    <img src="https://edition18.github.io/search.png" width="30px">      
+                </button>
+            </form>
+        
+        
+        </div>
+    </header>
+-->  
