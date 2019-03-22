@@ -1,6 +1,6 @@
 <head>
     <title>Singapore</title>
-    <!-- SAMPLE https://victor-lf.github.io/google-search-results/ -->
+    <!-- -->
     <!-- https://christalsimple.github.io/google-searchresults/ -->
 </head>
 
@@ -9,16 +9,47 @@
 <header>
 <div class="upperside">
     <div class="search-row search">
-        <div class="logo search">
-            <a href=""></a><img src="./googlelogo.png"/></a>
-        </div>
-        <div class="searchsubsection search">
-            <div class="search-bar search">
-                <form action="#" method="GET" name="srch">
-                    <input type="text" name="searchinput" value="Djent">
-                  </form>
+
+            <div class="logo search">
+                <a href=""></a><img class="googlelogo" src="./googlelogo.png"/></a>
             </div>
+            <div class="searchsubsection search">
+                <!-- the above is needed so we can group -->
+                <!-- search icon with the search bar ** -->
+                <div class="search-bar search">
+                    
+                <form action="#" method="GET" name="srch">
+                    <input type="text" name="searchinput" value="Djent">        
+                </form>
+            </div>
+
+            <div class="search-mic search">
+                <a class="a-search-mic search" href="#">
+                        <span class="span-mic"></span>
+                </a>
+            </div>
+
+            <div class="search-magnifier search">
+                <a class="a-search-magnifier search" href="#">
+                        <span class="span-magnifier"></span>
+                </a>
+            </div>
+
+    </div>
+
+    <div class="right-buttons search">
+        <div class="buttons apps-button">
+            <a href="#"><img class="logofy" src="https://edition18.github.io/googleapps.png"></a>
         </div>
+
+        <div class="buttons signin-button">
+            <a href="#">Sign in</a>
+        </div>
+    </div>
+    
+    </div>
+            
+    
     
     
     </div>
@@ -82,7 +113,7 @@ body {
     padding-left: 16px;
     padding-top: 5px;
     padding-right: 9px;
-    width: 503px;
+    min-width: 503px;
 }
 
 input[name="searchinput"] {
@@ -98,6 +129,96 @@ input[name="searchinput"] {
     width: 100%;
 }
 
+.search-mic {
+    padding: 0 8px;
+}
+
+.a-search-mic {
+    width: 24px;
+    line-height: 44px;
+    padding: 0 8px;
+}
+
+.span-mic {
+    width: 18px;
+    background: url(https://edition18.github.io/mic.png) no-repeat -3px 0;
+    background-size: 24px 24px;
+    display: inline-block;
+    height: 23px;
+    vertical-align: middle;
+}
+
+.upperside {
+    min-width: 1205px;
+    background: #fafafa;
+    border-bottom: 1px solid #e4e4e4;
+    padding-top: 20px;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.search-magnifier {
+    padding-right: 8px;
+}
+
+.a-search-magnifier {
+    width: 24px;
+    line-height: 44px;
+    padding: 0 8px;
+}
+
+.span-magnifier {
+    width: 18px;
+    background: url(https://edition18.github.io/search.png) no-repeat -3px 0;
+    background-size: 24px 24px;
+    display: inline-block;
+    height: 23px;
+    vertical-align: middle;
+}
+
+.right-buttons {
+    float: right;
+    line-height: 40px;
+    margin-left: 50px;
+    margin-right: 30px;
+}
+
+.apps-button {
+    opacity: .55;
+    line-height: 0;
+}
+
+.signin-button {
+    margin-left: 15px;
+    font-weight: bold;
+    padding: 0 12px;
+    border: 1px solid #4285f4;
+    border-radius: 2px;
+    background: #4387fd;
+    line-height: 28px;
+}
+
+.signin-button a {
+    /* any a within or nested a signin-button class */
+    color: #fff;
+}
+
+.buttons {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.googlelogo {
+    width: 120px;
+    height: 44px;
+}
+
+
+.logofy {
+    width: 20px;
+    height: 20px;
+}
 
 </style>
 
