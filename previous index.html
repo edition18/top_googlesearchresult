@@ -1,0 +1,203 @@
+<head>
+    <title>Emulate search of China</title>
+    <!-- SAMPLE https://denisrajlic.github.io/google_search_result/ -->
+</head>
+
+<body>
+<header>
+
+    <div class="section">
+        <img class="minilogo" src="./minilogo.png" alt="minilogo" />
+    </div>
+    
+    <div class="section">
+
+        <form class="section" action="something.php" method="POST">
+            <!-- note that section is applied again (x2 application) -->
+            <input class="section searchbar" type="text">
+        </form>
+    
+        <nav id="navbar"> 
+            <ul>  <!-- notice that we used ID -->
+                <li></li>       
+                <a href="a"><img class="img-navbar" src="https://edition18.github.io/googleapps.png"></a>
+                <li></li>
+                <a href="a"><img class="img-navbar" src="https://edition18.github.io/google-bell.png"></a>
+                <li></li>
+                <a href="a"><img class="img-navbar" src="https://edition18.github.io/googleprofilepic.jpg"></a>
+            </ul>
+        </nav>
+
+        <div class="tool-bar">
+            <nav>
+                <li class="current">
+                    <a href="na">All</a>
+                </li>
+            </nav>
+        
+        </div>
+
+    </div>
+</header>
+
+<div class="wrapper">
+    <p class="gray">About 123,000,000 results</p>
+</div>
+
+<div class="resultlistbox">
+
+    
+</div>
+
+
+</body>
+
+
+<style>
+
+img.minilogo {
+    width: 100px;
+    height: 30px;
+    padding: 15px;
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    display: inline;
+    margin-right: 20px;
+}
+
+header {
+    /* this would override any individual formatting of the internal elements */
+    /*  unless ID classes */
+}   
+
+body {
+    font-family: Arial, Helvetica, sans-serif; /* the font-family iterate this list until one is available */
+}
+
+input.searchbar {
+    block-size: 30px;
+    border-radius: 25px;
+    width: 625px;
+    /* resize and curve edges*/
+    font-size: 20px;
+    /* change font size of the text */
+    border: 1px solid #dfe1e5;
+    /* change border of search */
+    background-image: url("https://edition18.github.io/mic.png"), url("https://edition18.github.io/search.png");
+    background-repeat: no-repeat;
+    background-size: 22px, 27px;
+    background-position-x: 92%, 98%;
+    background-position-y: 1px, 1px;
+}
+
+.section {
+    /* this is a common format for all sections */
+    display: inline;
+    margin-top: 5px; /* shifts down abit*/
+    float: left;
+}
+
+
+
+#navbar { 
+    float: right;
+
+}
+
+ul li {
+    padding: 5px;
+    font-size: 13px;
+}
+
+.img-navbar {
+    margin-top: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+li {
+    display: inline-block;
+    margin-top: 30px;
+}
+
+div.tool-bar {
+    position: relative;
+    padding: 0px;
+    top: 0px;
+    font-size: 15px;
+}
+
+div.results {
+    position: relative;
+    padding: 0px;
+    top: 0px;
+    font-size: 15px;
+}
+
+li {
+    color: rgb(25, 25, 216);
+    font-weight: bold;
+
+}
+
+* {
+     /* this is a wildcard class ; in this case ALL elements affected */
+     /* https://www.w3schools.com/cssref/sel_all.asp */
+    padding: 0;
+    margin: 0;
+    border: 1px dotted black; /* border for debugging */
+}
+
+.current a {
+    /* NOTE: any a within a current class */
+    border-bottom-style: solid;
+    border-bottom: 3px;
+    border-bottom-color:  rgb(25, 25, 216);
+    border-bottom-style: solid;
+}
+
+div.resultlistbox {
+    width: 81%;
+    position: relative;
+    margin: auto;
+    top: 15px;
+    
+    
+    
+    
+    /* width: 81%;
+    position: relative;
+    margin: auto;
+    top: 10px; */
+}
+
+div.wrapper {
+    width: 81%;
+    position: relative;
+    margin: auto;
+    top: 10px;
+}
+
+.grey {
+    color: #777;
+    padding: 10px;
+    font-size: 13px;
+}
+
+div {
+    display: block; 
+    /* block is a container */
+    /* https://css-tricks.com/almanac/properties/d/display/ */
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+</style>

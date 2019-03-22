@@ -1,134 +1,28 @@
 <head>
     <title>Emulate search of China</title>
-    <!-- SAMPLE https://denisrajlic.github.io/google_search_result/ -->
+    <!-- SAMPLE https://victor-lf.github.io/google-search-results/ -->
+    <!-- https://edition18.github.io/googleapps.png -->
 </head>
 
 <body>
+
 <header>
-
-    <div class="section">
-        <img class="minilogo" src="./minilogo.png" alt="minilogo" />
-    </div>
-    
-    <div class="section">
-
-        <form class="section" action="something.php" method="POST">
-            <!-- note that section is applied again (x2 application) -->
-            <input class="section searchbar" type="text">
-        </form>
-    
-        <nav id="navbar"> 
-            <ul>  <!-- notice that we used ID -->
-                <li></li>       
-                <a href="a"><img class="img-navbar" src="https://edition18.github.io/googleapps.png"></a>
-                <li></li>
-                <a href="a"><img class="img-navbar" src="https://edition18.github.io/google-bell.png"></a>
-                <li></li>
-                <a href="a"><img class="img-navbar" src="https://edition18.github.io/googleprofilepic.jpg"></a>
-            </ul>
-        </nav>
-
-        <div class="tool-bar">
-            <nav>
-                <li class="current">
-                    <a href="na">All</a>
-                </li>
-            </nav>
-        
-        </div>
-
-    </div>
+<!-- searchbar & top menu -->
+<a>
+    <img src="./googlelogo.png" alt="logo" width="120" height="44" />
+</a>
 </header>
 
+<main>
 
 
+</main>
 
 </body>
 
 
 <style>
 
-
-
-img.minilogo {
-    width: 100px;
-    height: 30px;
-    padding: 15px;
-    padding-top: 15px;
-    padding-right: 15px;
-    padding-bottom: 15px;
-    padding-left: 15px;
-    display: inline;
-    margin-right: 20px;
-}
-
-header {
-    /* this would override any individual formatting of the internal elements */
-    /*  unless ID classes */
-}   
-
-body {
-    font-family: Arial, Helvetica, sans-serif; /* the font-family iterate this list until one is available */
-}
-
-input.searchbar {
-    block-size: 30px;
-    border-radius: 25px;
-    width: 625px;
-    /* resize and curve edges*/
-    font-size: 20px;
-    /* change font size of the text */
-    border: 1px solid #dfe1e5;
-    /* change border of search */
-    background-image: url("https://edition18.github.io/mic.png"), url("https://edition18.github.io/search.png");
-    background-repeat: no-repeat;
-    background-size: 22px, 27px;
-    background-position-x: 92%, 98%;
-    background-position-y: 1px, 1px;
-}
-
-.section {
-    /* this is a common format for all sections */
-    display: inline;
-    margin-top: 5px; /* shifts down abit*/
-    float: left;
-}
-
-
-
-#navbar { 
-    float: right;
-
-}
-
-ul li {
-    padding: 5px;
-    font-size: 13px;
-}
-
-.img-navbar {
-    margin-top: 10px;
-    width: 20px;
-    height: 20px;
-}
-
-li {
-    display: inline-block;
-    margin-top: 30px;
-}
-
-div.tool-bar {
-    position: relative;
-    padding: 0px;
-    top: 0px;
-    font-size: 15px;
-}
-
-li {
-    color: rgb(25, 25, 216);
-    font-weight: bold;
-
-}
 
 * {
      /* this is a wildcard class ; in this case ALL elements affected */
@@ -139,11 +33,24 @@ li {
 }
 
 .current a {
-    /* NOTE: any a within a current class */
-    border-bottom-style: solid;
-    border-bottom: 3px;
-    border-bottom-color:  rgb(25, 25, 216);
-    border-bottom-style: solid;
+
 }
+
+header {
+    background: #fafafa;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.header div { 
+    /* any div in header*/
+    /* not SAME as div.header! (this affects all div with header class  */
+    padding: 20px 12px 15px;
+    white-space: nowrap; /* prevents wrapping */ 
+    display: flex; /* allows the content to flex around its container */ 
+    align-items: center;
+}
+
+
+
 
 </style>
