@@ -1,27 +1,31 @@
 <head>
     <title>Singapore</title>
     <!-- SAMPLE https://victor-lf.github.io/google-search-results/ -->
-    <!-- https://edition18.github.io/googleapps.png -->
+    <!-- https://christalsimple.github.io/google-searchresults/ -->
 </head>
 
 <body>
 
 <header>
-<!-- searchbar & top menu -->
-<div>
-    <form action="#" method="GET" class="searchbar">
-        <a href="">
-            <img src="./googlelogo.png" alt="logo" width="120" height="44" />
-        </a>
-        
-        <input type="search" name="query" title="Search" value="Singapore" autocomplete="off">
-        
-        <button class="search">
-            <img src="https://edition18.github.io/search.png" width="30px">      
-        </button>
-        
-    </form>
+<div class="upperside">
+    <div class="search-row search">
+        <div class="logo search">
+            <a href=""></a><img src="./googlelogo.png"/></a>
+        </div>
+        <div class="searchsubsection search">
+            <div class="search-bar search">
+                <form action="#" method="GET" name="srch">
+                    <input type="text" name="searchinput" value="Djent">
+                  </form>
+            </div>
+        </div>
+    
+    
+    </div>
+    
 </div>
+
+
 </header>
 
 <main>
@@ -43,64 +47,56 @@
     border: 1px dotted black; /* border for debugging */
 }
 
-header {
-    background: #fafafa;
-    border-bottom: 1px solid #e4e4e4;
+body {
+    font-family: 'Roboto', arial, sans-serif;
+    font-size: small;
+    color: #777;
 }
 
-header div { 
-    /* any div in header*/
-    /* not SAME as div.header! (this affects all div with header class)  */
-    padding: 20px 12px 15px;
-    white-space: nowrap; /* prevents wrapping */ 
-    display: flex; /* allows the content to flex around its container */ 
-    align-items: center;
+.logo {
+    vertical-align: middle;
+    /* vertically aligns image */
+    /* https://www.w3schools.com/cssref/pr_pos_vertical-align.asp */
+    padding-left: 13px;
+    padding-right: 12px;
 }
 
-
-.searchbarshade {
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.16),0 0 0 1px rgba(0, 0, 0, 0.08);
+.search-row {
+    width: 100%;
+     /*width maintains justification  */
 }
 
-form {
-    background-color: #fff;
-    border: none;
-    border-radius: 2px;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
-    box-sizing: border-box;
-    margin: 0 17px;
-    outline: none;
-    padding: 0 15px;
-    transition: box-shadow 200ms cubic-bezier(0.4, 0.0, 0.2, 1);
-    width: 632px;
-    display: block;
-    margin-top: 0em;
-}
-
-input[type='search'] {
-    border: none;
+.search {
     display: inline-block;
-    font: 16px Arial, sans-serif;
-    height: 44px;
-    outline: none;
-    width: 580px;
-}
-
-html, body {
-    background: #fff;
-    color: #222;
-    font: 13px Arial, sans-serif;
-    margin: 0;
-}
-
-button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0;
     vertical-align: middle;
 }
 
+.searchsubsection {
+    border-radius: 2px;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.16), 0px 0px 0px 1px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 200ms cubic-bezier(0.4, 0.0, 0.2, 1);
+    background: white;
+}
+
+.search-bar {
+    padding-left: 16px;
+    padding-top: 5px;
+    padding-right: 9px;
+    width: 503px;
+}
+
+input[name="searchinput"] {
+    border: none;
+    font-family: 'Roboto', arial, sans-serif;
+    font-size: 16px;
+    color: #000;
+    padding: 0px;
+    margin: 0px;
+    height: 34px;
+    background: transparent;
+    outline: none;
+    width: 100%;
+}
 
 
 </style>
