@@ -1,6 +1,5 @@
 <head>
-    <title>Singapore</title>
-    <!-- -->
+    <title>Djent search</title>
     <!-- https://christalsimple.github.io/google-searchresults/ -->
 </head>
 
@@ -107,13 +106,33 @@
         <!-- so it takes priority -->
                 About 6,350,000 results (0.60 seconds)
         </div>
-        <div class="search-results">
-            <!-- notice we did NOT use search class anymore -->
-            <!-- that formatting is irrelevant here -->
-            dsadadsads
+
+        <div class="summary-results search">
+            <!-- Observe I am using search class again, for the inline block -->
+            <div class="summary-description search">
+                    <!-- <br /> is a LINE BREAK! -->
+                    <b>Djent</b> (/dʒɛnt/) is a subgenre of progressive metal, named for an onomatopoeia for the distinctive high-gain, distorted, palm-muted, low-pitch guitar sound first employed by Meshuggah.<br /><br />
+                    <b>Stylistic origins:</b> <a href="">Progressive metal</a><br />
+                    <b>Typical instruments:</b> <a href="">Electric guitar</a>; <a href="">bass</a>; <a href="">drums</a><br />
+            </div>
+
+            <div class="summary-picture search" >  
+                <!-- the search class here didnt do anything, but I put it for consistency -->
+                <a href="https://www.google.com/search?q=djent&rlz=1C1AVUC_enSG737SG738&tbm=isch&source=iu&ictx=1&fir=spd-74OFy_-FAM%253A%252C25GVpRrrAo5XUM%252C%252Fm%252F03ntc7g&vet=1&usg=AI4_-kSojbYYTaao4u8NR8DmNr3tHYJL_w&sa=X&ved=2ahUKEwjpp4CIgZbhAhWHRo8KHeMfAlcQ9QEwAHoECA4QBg#imgrc=spd-74OFy_-FAM:"><img src="https://edition18.github.io/djentsummary.jpg" /></a>    
+            </div>
+            
+            <div>
+                <a href="x" class="summary-wiki-page">Djent - Wikipedia</a>
+            </div>
+            
+            <div>
+                <a href="x" class="summary-wiki-link">https://en.wikipedia.org/wiki/Djent</a>
+            </div>
         </div>
         
-
+        <div class="search-results">
+                dsadadsads
+        </div>
 
 
 
@@ -286,7 +305,7 @@ input[name="searchinput"] {
 
 
 .search-tools {
-    margin-left: 150px;
+    margin-left: 147px;
     width: 655px;
 }
 
@@ -314,6 +333,10 @@ input[name="searchinput"] {
     text-decoration: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 .right_tools_buttons {
     float: right; 
 }
@@ -332,9 +355,34 @@ div {
 
 div.results-nr {
     width: 229px;
-    padding-left: 16px;
+    padding-left: 12px;
     padding-right: 8px;
     line-height: 43px;
+}
+
+.summary-results {
+    margin-top: 9px;
+    margin-left: 10px;
+    width: 635px;
+    height: 300px;
+    border: 1px;
+    border-style: solid;
+    border-color: #dfe1e5;
+    border-radius: 8px;
+}
+
+.summary-description {
+    font-size: 16px;
+    line-height: 1.375;
+    padding-right: 8px;
+    width: 410px;
+    height: 160px;
+}
+
+.summary-picture {
+    float: right;
+    height: 160px;
+    width: 213px;
 }
 
 .search-results {
