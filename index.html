@@ -6,58 +6,122 @@
 
 <body>
 
-<header>
+
 <div class="upperside">
-    <div class="search-row search">
+        <!-- notice that all had to be applied with search -->
+        <div class="search-row search">
 
-            <div class="logo search">
-                <a href=""></a><img class="googlelogo" src="./googlelogo.png"/></a>
+                    <div class="logo search">
+                        <a href=""></a><img class="googlelogo" src="./googlelogo.png"/></a>
+                    </div>
+                    <div class="searchsubsection search">
+                        <!-- the above (master group) is needed so we can group -->
+                        <!-- search icon with the search bar ** -->
+                        <div class="search-bar search">
+                            
+                        <form action="#" method="GET" name="srch">
+                            <input type="text" name="searchinput" value="Djent">        
+                        </form>
+                    </div>
+
+                    <div class="search-mic search">
+                        <a class="a-search-mic search" href="#">
+                                <span class="span-mic"></span>
+                        </a>
+                    </div>
+
+                    <div class="search-magnifier search">
+                        <a class="a-search-magnifier search" href="#">
+                                <span class="span-magnifier"></span>
+                        </a>
+                    </div>
+
             </div>
-            <div class="searchsubsection search">
-                <!-- the above is needed so we can group -->
-                <!-- search icon with the search bar ** -->
-                <div class="search-bar search">
-                    
-                <form action="#" method="GET" name="srch">
-                    <input type="text" name="searchinput" value="Djent">        
-                </form>
+
+            <div class="right-buttons search">
+                <!-- here on didnt apply search to all since buttons would be clearer -->
+                <div class="buttons apps-button">
+                    <a href="#"><img class="logofy" src="https://edition18.github.io/googleapps.png"></a>
+                </div>
+
+                <div class="buttons signin-button">
+                    <a href="#">Sign in</a>
+                </div>
             </div>
-
-            <div class="search-mic search">
-                <a class="a-search-mic search" href="#">
-                        <span class="span-mic"></span>
-                </a>
-            </div>
-
-            <div class="search-magnifier search">
-                <a class="a-search-magnifier search" href="#">
-                        <span class="span-magnifier"></span>
-                </a>
-            </div>
-
-    </div>
-
-    <div class="right-buttons search">
-        <div class="buttons apps-button">
-            <a href="#"><img class="logofy" src="https://edition18.github.io/googleapps.png"></a>
+        
         </div>
 
-        <div class="buttons signin-button">
-            <a href="#">Sign in</a>
+        <div class="search-tools">
+                <div class="tools_buttons" id="all-button">
+                    <!-- notice that for this -->
+                    <!-- i used ID for all-button -->
+                    <!-- I could use !important or use all-button class but compile it LAST! -->
+                        <a href="#">All</a>
+                </div>
+
+                <div class="tools_buttons">
+                        <!-- notice that for this -->
+                        <!-- i used ID for all-button -->
+                        <!-- I could use !important or use all-button class but compile it LAST! -->
+                            <a href="#">Videos</a>
+                </div>
+
+                <div class="tools_buttons">
+                        <!-- notice that for this -->
+                        <!-- i used ID for all-button -->
+                        <!-- I could use !important or use all-button class but compile it LAST! -->
+                            <a href="#">News</a>
+                </div>
+
+                <div class="tools_buttons">
+                        <!-- notice that for this -->
+                        <!-- i used ID for all-button -->
+                        <!-- I could use !important or use all-button class but compile it LAST! -->
+                            <a href="#">Images</a>
+                </div>
+
+                <div class="tools_buttons">
+                        <!-- notice that for this -->
+                        <!-- i used ID for all-button -->
+                        <!-- I could use !important or use all-button class but compile it LAST! -->
+                            <a href="#">More</a>
+                </div>
+
+                <div class="right_tools_buttons">
+                    <div class="tools_buttons" id="settings-button">
+                            <a href="#">Settings</a>
+                    </div>
+                
+                    <div class="tools_buttons" id="tools-button">
+                            <a href="#">Tools</a>
+                    </div>
+                </div>
+
         </div>
-    </div>
-    
-    </div>
-            
-    
-    
-    
-    </div>
-    
+
+</div>
+
+<div class="contents">
+        <div class="results-nr">
+        <!-- this is more specfic than content -->
+        <!-- so it takes priority -->
+                About 6,350,000 results (0.60 seconds)
+        </div>
+        <div class="search-results">
+            <!-- notice we did NOT use search class anymore -->
+            <!-- that formatting is irrelevant here -->
+            dsadadsads
+        </div>
+        
+
+
+
+
+
 </div>
 
 
-</header>
+
 
 <main>
 
@@ -113,7 +177,7 @@ body {
     padding-left: 16px;
     padding-top: 5px;
     padding-right: 9px;
-    min-width: 503px;
+    width: 503px;
 }
 
 input[name="searchinput"] {
@@ -216,9 +280,70 @@ input[name="searchinput"] {
 
 
 .logofy {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
 }
+
+
+.search-tools {
+    margin-left: 150px;
+    width: 655px;
+}
+
+.tools_buttons {
+    display: inline-block;
+    margin: 0 8px;
+    padding: 20px 8px;
+}
+
+#all-button {
+    /* All-button is ID */
+    padding-bottom: 10px;
+    border-bottom: 3px solid #4285f4;
+    font-weight: bold;
+}
+
+
+#all-button a {
+    /* All-button is ID */
+    color: #4285f4 !important;
+}
+
+.tools_buttons a {
+    color: #777;
+    text-decoration: none;
+}
+
+.right_tools_buttons {
+    float: right; 
+}
+
+div {
+    display: block;
+}
+
+.contents {
+    font-family: 'Roboto', arial, sans-serif;
+    font-size: small;
+    margin-left: 150px;
+    margin-bottom: 85px;
+    min-width: 1055px;
+}
+
+div.results-nr {
+    width: 229px;
+    padding-left: 16px;
+    padding-right: 8px;
+    line-height: 43px;
+}
+
+.search-results {
+    margin-top: 9px;
+    margin-left: 16px;
+    margin-right: 16px;
+    width: 600px;
+}
+
 
 </style>
 
