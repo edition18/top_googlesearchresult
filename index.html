@@ -101,42 +101,51 @@
 </div>
 
 <div class="contents">
-        <div class="results-nr">
-        <!-- this is more specfic than content -->
-        <!-- so it takes priority -->
-                About 6,350,000 results (0.60 seconds)
-        </div>
+        <div class="rightside">
 
-        <div class="summary-results search">
-            <!-- Observe I am using search class again, for the inline block -->
-            <div class="summary-description search">
-                    <!-- <br /> is a LINE BREAK! -->
-                    <b>Djent</b> (/dʒɛnt/) is a subgenre of progressive metal, named for an onomatopoeia for the distinctive high-gain, distorted, palm-muted, low-pitch guitar sound first employed by Meshuggah.<br /><br />
-                    <b>Stylistic origins:</b> <a href="">Progressive metal</a><br />
-                    <b>Typical instruments:</b> <a href="">Electric guitar</a>; <a href="">bass</a>; <a href="">drums</a><br />
+            <div class="results-nr">
+            <!-- this is more specfic than content -->
+            <!-- so it takes priority -->
+                    About 6,350,000 results (0.60 seconds)
             </div>
 
-            <div class="summary-picture search" >  
-                <!-- the search class here didnt do anything, but I put it for consistency -->
-                <a href="https://www.google.com/search?q=djent&rlz=1C1AVUC_enSG737SG738&tbm=isch&source=iu&ictx=1&fir=spd-74OFy_-FAM%253A%252C25GVpRrrAo5XUM%252C%252Fm%252F03ntc7g&vet=1&usg=AI4_-kSojbYYTaao4u8NR8DmNr3tHYJL_w&sa=X&ved=2ahUKEwjpp4CIgZbhAhWHRo8KHeMfAlcQ9QEwAHoECA4QBg#imgrc=spd-74OFy_-FAM:"><img src="https://edition18.github.io/djentsummary.jpg" /></a>    
+            <div class="summary-results search">
+                <!-- Observe I am using search class again, for the inline block -->
+                <div class="summary-description search">
+                        <!-- <br /> is a LINE BREAK! -->
+                        <b>Djent</b> (/dʒɛnt/) is a subgenre of progressive metal, named for an onomatopoeia for the distinctive high-gain, distorted, palm-muted, low-pitch guitar sound first employed by Meshuggah.<br /><br />
+                        <b>Stylistic origins:</b> <a href="">Progressive metal</a><br />
+                        <b>Typical instruments:</b> <a href="">Electric guitar</a>; <a href="">bass</a>; <a href="">drums</a><br />
+                </div>
+
+                <div class="summary-picture search" >  
+                    <!-- the search class here didnt do anything, but I put it for consistency -->
+                    <a href="https://www.google.com/search?q=djent&rlz=1C1AVUC_enSG737SG738&tbm=isch&source=iu&ictx=1&fir=spd-74OFy_-FAM%253A%252C25GVpRrrAo5XUM%252C%252Fm%252F03ntc7g&vet=1&usg=AI4_-kSojbYYTaao4u8NR8DmNr3tHYJL_w&sa=X&ved=2ahUKEwjpp4CIgZbhAhWHRo8KHeMfAlcQ9QEwAHoECA4QBg#imgrc=spd-74OFy_-FAM:"><img src="https://edition18.github.io/djentsummary.jpg" /></a>    
+                </div>
+                
+                <div>
+                    <a href="x" class="summary-wiki-page">Djent - Wikipedia</a>
+                </div>
+
+                <div>
+                    <a href="x" class="summary-wiki-link">https://en.wikipedia.org/wiki/Djent</a>
+                </div>
             </div>
             
-            <div>
-                <a href="x" class="summary-wiki-page">Djent - Wikipedia</a>
+            <div class="summary-results-help search">
+
+                <a href="x"><img class="img-center" src="https://edition18.github.io/googlequestionmark.jpg" /></a>
+                About this result
+                <a href="x"><img class="img-center" src="https://edition18.github.io/googleflagmark.jpg" /></a>
+                Feedback
+
             </div>
 
-            <div>
-                <a href="x" class="summary-wiki-link">https://en.wikipedia.org/wiki/Djent</a>
+
+            <div class="search-results search">
+                    dsadadsads
             </div>
-        </div>
-        
-        <div class="summary-results-help search">
-            summary result help
-        </div>
 
-
-        <div class="search-results search">
-                dsadadsads
         </div>
 
 
@@ -417,6 +426,33 @@ div.results-nr {
 .summary-results-help {
     width: 635px;
     height: 20px;
+
+    /* allows your to align items to right */
+    /* https://stackoverflow.com/questions/27539262/whats-the-difference-between-align-content-and-align-items */
+    text-align: right;
+    vertical-align: middle;
+    align-items: center;
+    align-content: center;
+
+}
+
+.summary-results-help-options {
+    float: right;
+    height: 20px;
+    vertical-align: middle;
+    align-items: center;
+    align-content: center;
+}
+
+.rightside { 
+    margin-left: 0px;
+    margin-bottom: 0px;
+    width: 655px;
+}
+
+.img-center {
+    /* center images around elements */
+    vertical-align: middle;
 }
 
 </style>
