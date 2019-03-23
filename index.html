@@ -147,12 +147,12 @@
             </div>
 
             
-            <div>
+            <div class="related-searches">
                 Searches related to djent
             </div>
 
 
-            <footer>
+            <footer class="google-footer">
                 FOOTER
             </footer>
             
@@ -465,8 +465,10 @@ div.results-nr {
     margin-left: 0px;
     margin-bottom: 0px;
     width: 655px;
+    height: 1055px;
     float: left;
-
+    position:relative; 
+    /* this allows us to position the footer to tne end */
 
 }
 
@@ -475,6 +477,24 @@ div.results-nr {
 .img-center {
     /* center images around elements */
     vertical-align: middle;
+}
+
+.related-searches {
+    margin-top: 9px;
+    margin-left: 10px;
+}
+
+
+.google-footer {
+    margin-top: 9px;
+    margin-left: 10px;
+    position:absolute;
+    bottom: 0;
+    /* this allows us to position the footer to tne end */
+    /* note we needed to make the main container relative position */
+    /* just remember need position:relative in */
+    /* parent node to make the current parent:absolute still relative to the parent. */
+    
 }
 
 </style>
