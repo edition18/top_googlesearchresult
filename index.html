@@ -101,7 +101,7 @@
 </div>
 
 <div class="contents">
-        <div class="rightside">
+        <div class="leftside">
 
             <div class="results-nr">
             <!-- this is more specfic than content -->
@@ -143,12 +143,13 @@
 
 
             <div class="search-results search">
-                    dsadadsads
+                    search reullts
             </div>
-
         </div>
 
-
+        <div class="rightside">
+                rightside
+        </div>
 
 
 </div>
@@ -366,6 +367,7 @@ div {
     margin-left: 150px;
     margin-bottom: 85px;
     min-width: 1055px;
+    min-height: 1055px;
 }
 
 div.results-nr {
@@ -426,29 +428,33 @@ div.results-nr {
 .summary-results-help {
     width: 635px;
     height: 20px;
-
     /* allows your to align items to right */
     /* https://stackoverflow.com/questions/27539262/whats-the-difference-between-align-content-and-align-items */
     text-align: right;
-    vertical-align: middle;
-    align-items: center;
-    align-content: center;
-
 }
 
 .summary-results-help-options {
     float: right;
     height: 20px;
-    vertical-align: middle;
-    align-items: center;
-    align-content: center;
 }
 
 .rightside { 
     margin-left: 0px;
     margin-bottom: 0px;
-    width: 655px;
+    width: 395px;
+    float: left;
 }
+
+.leftside { 
+    margin-left: 0px;
+    margin-bottom: 0px;
+    width: 655px;
+    float: left;
+
+
+}
+
+
 
 .img-center {
     /* center images around elements */
