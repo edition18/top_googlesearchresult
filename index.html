@@ -159,7 +159,14 @@
         </div>
 
         <div class="rightside">
-                rightside
+                <div class="rightside-header">header
+
+
+                    <div class="rightside-header-picture"><a href="x"><img src="https://edition18.github.io/greyshareicon.jpg"/></a></div>                    
+                </div>
+                <div class="rightside-description">desc</div>
+                <div class="rightside-songs">songs</div>
+                <div class="rightside-artists">artists</div>
         </div>
 
 
@@ -460,7 +467,6 @@ div.results-nr {
     border-style: solid;
     border-color: #dfe1e5;
     border-radius: 8px;
-
 }
 
 .leftside { 
@@ -497,7 +503,33 @@ div.results-nr {
     /* note we needed to make the main container relative position */
     /* just remember need position:relative in */
     /* parent node to make the current parent:absolute still relative to the parent. */
+}
+
+.rightside-header {
+    color: rgba(0,0,0,.87);
+    line-height: 1.2;
+    font-family: arial,sans-serif-light,sans-serif;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.rightside-header-picture {
+    float: right;
+    height: 32.5px;
+    width: 32.5px;
+    vertical-align: middle;
+}
+
+.rightside-description {
+    border-top: solid 1px #ebebeb;
+}
+
+.rightside-songs {
     
+}
+
+.rightside-artists {
+   
 }
 
 </style>
