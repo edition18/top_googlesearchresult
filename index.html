@@ -180,12 +180,13 @@
                     Songs<br />
                 </div>
                 <div class="rightside-songs-container">   
-                        CONTAINER 1
-                        <!-- <a>A Wolf Amongst Ravens</a><br />
-                        17 December 2019
-                        <img src="https://edition18.github.io/songimage1.jpg" /> -->
-
-                        <div class="rightside-songs-container-img"><img src="https://edition18.github.io/songimage1.jpg" /></div>
+                        <img src="https://edition18.github.io/songimage1.jpg" />
+                        <!-- the image needs to go prior to work -->
+                        <span class="rightside-songs-container-title"><a>A Wolf Amongst Ravens</a></span>
+                        <!-- see that we used SPAN here, cause if we used div it will screw up alignment due to Divs auto format -->
+                        <br />
+                        <span class="rightside-songs-container-date">17 December 2013</span>
+                        
                 </div>
                 <div class="rightside-artists">dsada
 
@@ -561,7 +562,6 @@ div.results-nr {
 
 .rightside-songs-container {
     font-size: 14px;
-    color: #757575;
     padding-top: 10px;
     padding-left: 10px;
     width: 337.5px; 
@@ -571,7 +571,6 @@ div.results-nr {
 
 .rightside-songs-container-title {
     /* for a in rightside-songs */
-    color: #222;
     font-size: 14px;
     margin-top: 0;
     line-height: 20px;
@@ -579,7 +578,19 @@ div.results-nr {
     vertical-align: 0;
     overflow: hidden;
     text-overflow: ellipsis;
-    width: 250px; 
+    width: 250px;
+}
+
+
+.rightside-songs-container-title a {
+    /* to override the default a formats */
+    color: #222;
+}
+
+.rightside-songs-container-date {
+    display: block; 
+    padding-top: 10px;
+    color: #757575;
 }
 
 .rightside-songs-container img {
