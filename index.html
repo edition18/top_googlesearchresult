@@ -187,7 +187,24 @@
 
 
             <footer class="google-footer-container">
-                FOOTER
+                <div class="google-footer-container-top">
+                    <img id="search-line" src="https://edition18.github.io/googlesearchline.jpg" />
+                    <a href="x"><img src="https://edition18.github.io/googlenextbutton.png" /></a>
+                </div>
+                <div class="google-footer-container-bottom">
+                    <a href="x">1</a>
+                    <a href="x">2</a>
+                    <a href="x">3</a>
+                    <a href="x">4</a>
+                    <a href="x">5</a>
+                    <a href="x">6</a>
+                    <a href="x">7</a>
+                    <a href="x">8</a>
+                    <a href="x">9</a>
+                    <a href="x">10</a>
+                    <a href="x">11</a>
+                </div>
+
             </footer>
             
         </div>
@@ -713,7 +730,7 @@ div.results-nr {
 }
 
 .search-result-container-title {
-    font-size: 14px;
+    font-size: 18px;
     padding-top: 1px;
     line-height: 1.43;
     padding-top:3px;
@@ -758,21 +775,42 @@ div.results-nr {
 }
 
 .google-footer-container {
+    width: 635px;
     margin-top: 9px;
     margin-left: 10px;
     position:absolute;
     bottom: 0;
+    display: inline-block;
     /* this allows us to position the footer to tne end */
     /* note we needed to make the main container relative position */
     /* just remember need position:relative in */
     /* parent node to make the current parent:absolute still relative to the parent. */
+}
+
+.google-footer-container-top {
 
 }
 
-google-footer-container-top {
+#search-line {
+    padding-left: 150px;
+    /* allows us to center the image in container */
+}
+
+.google-footer-container-top img {
     vertical-align: middle;
 }
 
+.google-footer-container-bottom {
+    text-align: center;
+}
+
+.google-footer-container-bottom a {
+    padding: 4.55px;
+}
+
+.google-footer-container-right {
+    vertical-align: middle;
+}
 
 </style>
 
