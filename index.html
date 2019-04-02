@@ -159,12 +159,34 @@
             <div class="related-searches">
                 <span>Searches related to djent</span>
                 <br />
-                <div class="related-searches-subcontainer">Test</div>
-                <div class="related-searches-subcontainer">Test</div>
+                <div class="related-searches-subcontainer">
+                    <a>Test</a>
+                    <br />
+                    <a>Test 2</a>
+                    <br />
+                    <a>Test 3</a>
+                    <br />
+                    <a>Test 4</a>
+                    <br />
+                    <a>Test 5</a>
+                    <br />
+                </div>
+                <div class="related-searches-subcontainer">
+                    <a>Test 6</a>
+                    <br />
+                    <a>Test 7</a>
+                    <br />
+                    <a>Test 8</a>
+                    <br />
+                    <a>Test 9</a>
+                    <br />
+                    <a>Test 10</a>
+                    <br />
+                </div>
             </div>
 
 
-            <footer class="google-footer">
+            <footer class="google-footer-container">
                 FOOTER
             </footer>
             
@@ -562,16 +584,6 @@ div.results-nr {
     vertical-align: middle;
 }
 
-.google-footer {
-    margin-top: 9px;
-    margin-left: 10px;
-    position:absolute;
-    bottom: 0;
-    /* this allows us to position the footer to tne end */
-    /* note we needed to make the main container relative position */
-    /* just remember need position:relative in */
-    /* parent node to make the current parent:absolute still relative to the parent. */
-}
 
 .rightside-header {
     color: rgba(0,0,0,.87);
@@ -633,8 +645,7 @@ div.results-nr {
 }
 
 .rightside-songs-container-date {
-    display: block;
-    /* the above allows me to do padding */
+    line-height: 30px;
     padding-top: 10px;
     color: #757575;
     width: 250px;
@@ -743,7 +754,25 @@ div.results-nr {
     padding-top: 3px;
     padding-bottom: 3px;
     font-size: 14px;
+    line-height: 30px;
 }
+
+.google-footer-container {
+    margin-top: 9px;
+    margin-left: 10px;
+    position:absolute;
+    bottom: 0;
+    /* this allows us to position the footer to tne end */
+    /* note we needed to make the main container relative position */
+    /* just remember need position:relative in */
+    /* parent node to make the current parent:absolute still relative to the parent. */
+
+}
+
+google-footer-container-top {
+    vertical-align: middle;
+}
+
 
 </style>
 
